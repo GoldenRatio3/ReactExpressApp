@@ -1,9 +1,12 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { Store } from "../store";
+import { store } from "../store";
+import { ConnectedDashboard } from "./Dashboard";
 
 export const Main = () => (
-  <Provider store={Store}>
-    <div>Dashboard go here</div>
+  <Provider store={store}>
+    <div>
+      <ConnectedDashboard />
+    </div>
   </Provider>
 );
